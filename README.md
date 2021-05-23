@@ -10,9 +10,10 @@ Just enough code to get started with GIS stuff in Python.
 
 ## Getting Started
 * Clone this repository.
-* With Anaconda, create a new environment from the provided yml file or see below for step-by-step instructions.
+* With Anaconda, create a new environment from the provided yml file or see further below for step-by-step instructions.
 ```bash
-conda env create -f environment.yml
+# replace the string "my_project_env_name" with your own name for the environment
+conda env create -n my_project_env_name --file=environment.yml
 ```
 * Activate the new gis_project conda env
 * Run the sample project with:
