@@ -1,6 +1,9 @@
 # gis_project
  A Starter Template for GIS in Python with a complete working environment.
 
+## About 
+Just enough code to get started with GIS stuff in Python.
+
 ## Usage
 * Use this template repository to build scripts for GIS analysis in Python. 
 * Keep this project and its environment separate from your primary project to avoid weird dependency conflicts.
