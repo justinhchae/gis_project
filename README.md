@@ -1,5 +1,5 @@
 # gis_project
- A Starter Template for GIS in Python with a completely working environment.
+ A Starter Template for GIS in Python with a complete working environment.
 
 ## Usage
 * Use this template repository to build scripts for GIS analysis in Python. 
@@ -10,7 +10,7 @@
 
 ## About GIS in Python
 * The two key libraries for doing GIS stuff in Python are Geoplot and Geopandas. Unfortunately, they have some intricate dependencies that can be difficult to get a project off the ground.
-* The problem solved by this template is avoiding breaking your conda env when trying to install the GIS libraries by creating a separate env specifically for GIS things.
+* The problem solved by this template is avoiding breaking your conda env when trying to install the GIS libraries by creating a separate env specifically for GIS things. This is as recommended by the developers. 
 * Classic env conflicts include issues where the installation wheel takes a really long time to run and when there are strange directory errors about missing images and the like. These issues are mostly solved by setting strict channel priorities and allowing the installers to work with very specific scope. See resource sections below.
 
 ## Notable Packages that are Installed
