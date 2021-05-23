@@ -1,16 +1,19 @@
-# This is a sample Python script.
+import geoplot as gplt
+import geopandas as gpd
+import matplotlib.pyplot as plt
+import pandas as pd
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+from src import constants
 
+# data from cook county open data and us census
+township_boundaries = gpd.read_file(constants.TOWNSHIP_POLYGONS_GEOJSON)
+zip_code_data = gpd.read_file(constants.TOWNSHIP_POINTS_GEOJSON)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# call geoplot plot on polygons as ax
+ax = gplt.polyplot(township_boundaries)
+# plot point data with same axis, ax
+gplt.pointplot(zip_code_data,s=1, ax=ax)
+# set title
+plt.title("Example Plot: IL State-wide Zip Codes and Cook Count Township Boundaries")
+# display plot
+plt.show()
