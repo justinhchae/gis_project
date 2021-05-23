@@ -14,6 +14,11 @@ Just enough code to get started with GIS stuff in Python.
 ```bash
 conda env create -f environment.yml
 ```
+* Activate the new gis_project conda env
+* Run the sample project with:
+```bash
+python3 main.py
+```
 ## Key References
 * Based on the Geoplot [heatmap examples page](https://geopandas.org/gallery/plotting_with_geoplot.html)
 
