@@ -5,7 +5,13 @@
 * Use this template repository to build scripts for GIS analysis in Python. 
 * Keep this project and its environment separate from your primary project to avoid weird dependency conflicts.
 
-## Key References:
+## Getting Started
+* Clone this repository.
+* With Anaconda, create a new environment from the provided yml file or see below for step-by-step instructions.
+```bash
+conda env create -f environment.yml
+```
+## Key References
 * Based on the Geoplot [heatmap examples page](https://geopandas.org/gallery/plotting_with_geoplot.html)
 
 ## About GIS in Python
