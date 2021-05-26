@@ -82,6 +82,10 @@ python3 main.py
   ```bash
   conda env export > environment.yml
   ```  
+* Update Conda:
+  ```bash
+  conda update -n base -c defaults conda
+  ```
 * Git Things:
   ```bash
   # remove a folder dir from git tracking
